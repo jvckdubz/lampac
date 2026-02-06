@@ -1,0 +1,18 @@
+services:
+  lampac:
+    image: ghcr.io/jvckdubz/lampac:latest
+    container_name: lampac
+    restart: always
+    ports:
+      - "9118:9118"
+      # Раскомментируйте для прямого доступа к TorrServer:
+      # - "8090:8090"
+    volumes:
+      - ./data:/home
+    # Опционально: ограничение ресурсов
+    # deploy:
+    #   resources:
+    #     limits:
+    #       memory: 1G
+    #     reservations:
+    #       memory: 256M

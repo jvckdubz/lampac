@@ -1,0 +1,19 @@
+# Data directories
+data/
+*.tar
+*.tar.gz
+
+# Secrets
+.env
+*.token
+passwd
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
